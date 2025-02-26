@@ -1,80 +1,82 @@
 # Basics sysadmin Windows & Linux
 
-Tester si un port est ouvert :
+[toc]
 
-🐧 Linux :
+## Tester si un port est ouvert
+
+### 🐧 Linux
 ```
 telnet 192.168.1.10 3389
 ```
-🪟 Windows : 
+### 🪟 Windows
 ```
 Test-NetConnection -ComputerName <IP> -Port <PORT>
 ```
 
-Emplacement du fichier host :
+## Emplacement du fichier host
 
-🐧 Linux :
+### 🐧 Linux
 ```
 /etc/hosts
 ```
-🪟 Windows :
+### 🪟 Windows
 ```
 C:\Windows\System32\drivers\etc\hosts
 ```
 
-Emplacement du fichier known_hosts :
+## Emplacement du fichier known_hosts
 
-🐧 Linux :
+### 🐧 Linux
 ```
 ~/.ssh/known_hosts
 ```
-🪟 Windows :
+### 🪟 Windows
 ```
 C:\Users\%USERNAME%\.ssh\known_hosts
 ```
 
-Vérifier le hash d’un fichier :
+## Vérifier le hash d’un fichier
 
-🐧 Linux :
+### 🐧 Linux
 ```
 md5sum MonFichier.exe
 sha1sum MonFichier.exe
 sha256sum MonFichier.exe
 ```
-🪟 Windows :
+### 🪟 Windows
 ```
 Get-FileHash -Path "C:\Users\MonFichier.exe" -Algorithm SHA256
 ```
 
-Suivi en temps réel :
+## Suivi en temps réel
 
-🐧 Linux :
+### 🐧 Linux
 ```
 tail -f /var/log/syslog
 ```
-🪟 Windows :
+### 🪟 Windows
 ```
 Get-Content -Path "C:\path\to\file.log" -Wait
 ```
 
-Historique des commandes :
+## Historique des commandes
 
-🐧 Linux :
+### 🐧 Linux
 ```
 history
 ```
-🪟 Windows :
+### 🪟 Windows
 ```
 Get-History
 ```
 
-Trouver une chaine de caractere dans des fichiers :
+## Trouver une chaine de caractere dans des fichiers
 
-🐧 Linux :
+### 🐧 Linux
 ```
 grep -ir "error" /var/log/*
 ```
-🪟 Windows :
+### 🪟 Windows
 ```
 findstr /S /I "error" *
 ```
