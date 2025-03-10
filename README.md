@@ -29,8 +29,8 @@
 ```
 telnet 192.168.1.10 3389
 ```
-### 🪟 Windows
-```
+### 🪟 Windows (Powershell)
+``` powershell
 Test-NetConnection -ComputerName <IP> -Port <PORT>
 ```
 
@@ -64,8 +64,8 @@ md5sum MonFichier.exe
 sha1sum MonFichier.exe
 sha256sum MonFichier.exe
 ```
-### 🪟 Windows
-```
+### 🪟 Windows (Powershell)
+``` powershell
 Get-FileHash -Path "C:\Users\MonFichier.exe" -Algorithm SHA256
 ```
 
@@ -75,8 +75,8 @@ Get-FileHash -Path "C:\Users\MonFichier.exe" -Algorithm SHA256
 ```
 tail -f /var/log/syslog
 ```
-### 🪟 Windows
-```
+### 🪟 Windows (Powershell)
+``` powershell
 Get-Content -Path "C:\path\to\file.log" -Wait
 ```
 
@@ -86,8 +86,8 @@ Get-Content -Path "C:\path\to\file.log" -Wait
 ```
 history
 ```
-### 🪟 Windows
-```
+### 🪟 Windows (Powershell)
+``` powershell
 Get-History
 ```
 
@@ -100,4 +100,42 @@ grep -ir "error" /var/log/*
 ### 🪟 Windows
 ```
 findstr /S /I "error" *
+```
+
+## Suivre le chemin réseau
+
+### 🐧 Linux
+```
+traceroute -n github.com
+```
+### 🪟 Windows
+```
+tracert -d github.com
+```
+
+## Affiche la config réseau
+
+### 🐧 Linux
+```
+ifconfig
+```
+
+```
+ip a
+```
+### 🪟 Windows
+```
+ipconfig
+```
+
+## Création d'un nouveau dossier
+
+### 🐧 Linux
+```
+mkdir mydir
+```
+
+### 🪟 Windows
+```
+md mydir
 ```
