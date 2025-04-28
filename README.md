@@ -87,6 +87,12 @@ Get-Content -Path "C:\path\to\file.log" -Wait
 history
 ```
 ### 🪟 Windows (Powershell)
+
+#### Session active
+``` powershell
+Get-History
+```
+#### Toutes les commandes tapées en powershell sur votre machine
 ``` powershell
 Get-History
 ```
