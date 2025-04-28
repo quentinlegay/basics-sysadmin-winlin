@@ -94,7 +94,7 @@ Get-History
 ```
 #### Toutes les commandes tapées en powershell sur votre machine
 ``` powershell
-Get-History
+cat -Path "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt"
 ```
 
 ## Trouver une chaine de caractere dans des fichiers
