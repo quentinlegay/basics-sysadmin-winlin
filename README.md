@@ -22,6 +22,19 @@
   - [Trouver une chaine de caractere dans des fichiers](#trouver-une-chaine-de-caractere-dans-des-fichiers)
     - [🐧 Linux](#-linux-6)
     - [🪟 Windows](#-windows-6)
+  - [Connexion réseau](#connexion-réseau)
+    - [🐧 Linux](#-linux-7)
+    - [🪟 Windows](#-windows-7)
+    - [🪟 Windows Powershell](#-windows-powershell)
+  - [Log système](#log-système)
+    - [🐧 Linux](#-linux-8)
+    - [🪟 Windows](#-windows-8)
+  - [Voir les utilisateurs connectés](#voir-les-utilisateurs-connectés)
+    - [🐧 Linux](#-linux-9)
+    - [🪟 Windows](#-windows-9)
+  - [Voir les taches planifiées](#voir-les-taches-planifiées)
+    - [🐧 Linux](#-linux-10)
+    - [🪟 Windows](#-windows-10)
 
 ## Tester si un port est ouvert
 
@@ -100,4 +113,53 @@ grep -ir "error" /var/log/*
 ### 🪟 Windows
 ```
 findstr /S /I "error" *
+```
+
+## Connexion réseau
+
+### 🐧 Linux
+```
+netstat -laputen
+```
+### 🪟 Windows
+```
+netstat -an
+```
+
+### 🪟 Windows Powershell
+```
+Get-NetTCPConnection
+```
+
+## Log système
+
+### 🐧 Linux
+```
+journalctl
+```
+### 🪟 Windows
+```
+eventvwr.msc
+```
+
+## Voir les utilisateurs connectés
+
+### 🐧 Linux
+```
+who
+```
+### 🪟 Windows
+```
+query user
+```
+
+## Voir les taches planifiées
+
+### 🐧 Linux
+```
+crontab -l
+```
+### 🪟 Windows
+```
+schtasks /query
 ```
