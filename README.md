@@ -3,38 +3,40 @@
 - [Basics sysadmin Windows \& Linux](#basics-sysadmin-windows--linux)
   - [Tester si un port est ouvert](#tester-si-un-port-est-ouvert)
     - [🐧 Linux](#-linux)
-    - [🪟 Windows](#-windows)
+    - [🪟 Windows (Powershell)](#-windows-powershell)
   - [Emplacement du fichier host](#emplacement-du-fichier-host)
     - [🐧 Linux](#-linux-1)
-    - [🪟 Windows](#-windows-1)
+    - [🪟 Windows](#-windows)
   - [Emplacement du fichier known\_hosts](#emplacement-du-fichier-known_hosts)
     - [🐧 Linux](#-linux-2)
-    - [🪟 Windows](#-windows-2)
+    - [🪟 Windows](#-windows-1)
   - [Vérifier le hash d’un fichier](#vérifier-le-hash-dun-fichier)
     - [🐧 Linux](#-linux-3)
-    - [🪟 Windows](#-windows-3)
+    - [🪟 Windows (Powershell)](#-windows-powershell-1)
   - [Suivi en temps réel](#suivi-en-temps-réel)
     - [🐧 Linux](#-linux-4)
-    - [🪟 Windows](#-windows-4)
+    - [🪟 Windows (Powershell)](#-windows-powershell-2)
   - [Historique des commandes](#historique-des-commandes)
     - [🐧 Linux](#-linux-5)
-    - [🪟 Windows](#-windows-5)
+    - [🪟 Windows (Powershell)](#-windows-powershell-3)
+      - [Session active](#session-active)
+      - [Toutes les commandes tapées en powershell sur votre machine](#toutes-les-commandes-tapées-en-powershell-sur-votre-machine)
   - [Trouver une chaine de caractere dans des fichiers](#trouver-une-chaine-de-caractere-dans-des-fichiers)
     - [🐧 Linux](#-linux-6)
-    - [🪟 Windows](#-windows-6)
+    - [🪟 Windows](#-windows-2)
   - [Connexion réseau](#connexion-réseau)
     - [🐧 Linux](#-linux-7)
-    - [🪟 Windows](#-windows-7)
-    - [🪟 Windows Powershell](#-windows-powershell)
+    - [🪟 Windows](#-windows-3)
+    - [🪟 Windows Powershell](#-windows-powershell-4)
   - [Log système](#log-système)
     - [🐧 Linux](#-linux-8)
-    - [🪟 Windows](#-windows-8)
+    - [🪟 Windows](#-windows-4)
   - [Voir les utilisateurs connectés](#voir-les-utilisateurs-connectés)
     - [🐧 Linux](#-linux-9)
-    - [🪟 Windows](#-windows-9)
+    - [🪟 Windows](#-windows-5)
   - [Voir les taches planifiées](#voir-les-taches-planifiées)
     - [🐧 Linux](#-linux-10)
-    - [🪟 Windows](#-windows-10)
+    - [🪟 Windows](#-windows-6)
 
 ## Tester si un port est ouvert
 
@@ -42,8 +44,8 @@
 ```
 telnet 192.168.1.10 3389
 ```
-### 🪟 Windows
-```
+### 🪟 Windows (Powershell)
+``` powershell
 Test-NetConnection -ComputerName <IP> -Port <PORT>
 ```
 
@@ -77,8 +79,8 @@ md5sum MonFichier.exe
 sha1sum MonFichier.exe
 sha256sum MonFichier.exe
 ```
-### 🪟 Windows
-```
+### 🪟 Windows (Powershell)
+``` powershell
 Get-FileHash -Path "C:\Users\MonFichier.exe" -Algorithm SHA256
 ```
 
@@ -88,8 +90,8 @@ Get-FileHash -Path "C:\Users\MonFichier.exe" -Algorithm SHA256
 ```
 tail -f /var/log/syslog
 ```
-### 🪟 Windows
-```
+### 🪟 Windows (Powershell)
+``` powershell
 Get-Content -Path "C:\path\to\file.log" -Wait
 ```
 
@@ -99,9 +101,15 @@ Get-Content -Path "C:\path\to\file.log" -Wait
 ```
 history
 ```
-### 🪟 Windows
-```
+### 🪟 Windows (Powershell)
+
+#### Session active
+``` powershell
 Get-History
+```
+#### Toutes les commandes tapées en powershell sur votre machine
+``` powershell
+cat -Path "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt"
 ```
 
 ## Trouver une chaine de caractere dans des fichiers
