@@ -48,6 +48,9 @@ telnet 192.168.1.10 3389
 ``` powershell
 Test-NetConnection -ComputerName <IP> -Port <PORT>
 ```
+``` powershell
+tnc -cn <IP> -p <PORT>
+```
 
 ## Emplacement du fichier host
 
