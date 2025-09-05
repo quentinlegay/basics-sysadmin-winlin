@@ -37,7 +37,10 @@
   - [Voir les taches planifiées](#voir-les-taches-planifiées)
     - [🐧 Linux](#-linux-10)
     - [🪟 Windows](#-windows-6)
-
+  - [Connaître son IP publique](#connaître-son-ip-publique)
+    - [🐧 Linux](#-linux-11)
+    - [🪟 Windows](#-windows-7)
+    - 
 ## Tester si un port est ouvert
 
 ### 🐧 Linux
