@@ -174,3 +174,14 @@ crontab -l
 ```
 schtasks /query
 ```
+
+## Connaître son IP publique
+
+### 🐧 Linux
+```
+wget -qO- https://api.ipify.org
+```
+### 🪟 Windows
+```
+(Invoke-WebRequest -Uri "https://api.ipify.org").Content
+```
