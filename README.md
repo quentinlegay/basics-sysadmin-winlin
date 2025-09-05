@@ -40,7 +40,7 @@
   - [Connaître son IP publique](#connaître-son-ip-publique)
     - [🐧 Linux](#-linux-11)
     - [🪟 Windows](#-windows-7)
-    - 
+
 ## Tester si un port est ouvert
 
 ### 🐧 Linux
