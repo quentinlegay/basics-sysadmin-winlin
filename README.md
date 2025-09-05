@@ -1,4 +1,4 @@
-# Basics sysadmin Windows & Linux
+# Basics cheat-sheet sysadmin Windows & Linux
 
 - [Basics sysadmin Windows \& Linux](#basics-sysadmin-windows--linux)
   - [Tester si un port est ouvert](#tester-si-un-port-est-ouvert)
