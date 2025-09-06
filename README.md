@@ -1,46 +1,4 @@
 # Basics cheat-sheet sysadmin Windows & Linux
-
-- [Basics sysadmin Windows \& Linux](#basics-sysadmin-windows--linux)
-  - [Tester si un port est ouvert](#tester-si-un-port-est-ouvert)
-    - [🐧 Linux](#-linux)
-    - [🪟 Windows (Powershell)](#-windows-powershell)
-  - [Emplacement du fichier host](#emplacement-du-fichier-host)
-    - [🐧 Linux](#-linux-1)
-    - [🪟 Windows](#-windows)
-  - [Emplacement du fichier known\_hosts](#emplacement-du-fichier-known_hosts)
-    - [🐧 Linux](#-linux-2)
-    - [🪟 Windows](#-windows-1)
-  - [Vérifier le hash d’un fichier](#vérifier-le-hash-dun-fichier)
-    - [🐧 Linux](#-linux-3)
-    - [🪟 Windows (Powershell)](#-windows-powershell-1)
-  - [Suivi en temps réel](#suivi-en-temps-réel)
-    - [🐧 Linux](#-linux-4)
-    - [🪟 Windows (Powershell)](#-windows-powershell-2)
-  - [Historique des commandes](#historique-des-commandes)
-    - [🐧 Linux](#-linux-5)
-    - [🪟 Windows (Powershell)](#-windows-powershell-3)
-      - [Session active](#session-active)
-      - [Toutes les commandes tapées en powershell sur votre machine](#toutes-les-commandes-tapées-en-powershell-sur-votre-machine)
-  - [Trouver une chaine de caractere dans des fichiers](#trouver-une-chaine-de-caractere-dans-des-fichiers)
-    - [🐧 Linux](#-linux-6)
-    - [🪟 Windows](#-windows-2)
-  - [Connexion réseau](#connexion-réseau)
-    - [🐧 Linux](#-linux-7)
-    - [🪟 Windows](#-windows-3)
-    - [🪟 Windows Powershell](#-windows-powershell-4)
-  - [Log système](#log-système)
-    - [🐧 Linux](#-linux-8)
-    - [🪟 Windows](#-windows-4)
-  - [Voir les utilisateurs connectés](#voir-les-utilisateurs-connectés)
-    - [🐧 Linux](#-linux-9)
-    - [🪟 Windows](#-windows-5)
-  - [Voir les taches planifiées](#voir-les-taches-planifiées)
-    - [🐧 Linux](#-linux-10)
-    - [🪟 Windows](#-windows-6)
-  - [Connaître son IP publique](#connaître-son-ip-publique)
-    - [🐧 Linux](#-linux-11)
-    - [🪟 Windows](#-windows-7)
-
 ## Tester si un port est ouvert
 
 ### 🐧 Linux
@@ -184,7 +142,7 @@ schtasks /query
 ```
 wget -qO- https://api.ipify.org
 ```
-### 🪟 Windows
+### 🪟 Windows (Powershell)
 ```
 (Invoke-WebRequest -Uri "https://api.ipify.org").Content
 ```
