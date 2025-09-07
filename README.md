@@ -98,7 +98,7 @@ netstat -laputen
 netstat -an
 ```
 
-### 🪟 Windows Powershell
+### 🪟 Windows (Powershell)
 ```
 Get-NetTCPConnection
 ```
@@ -145,4 +145,23 @@ wget -qO- https://api.ipify.org
 ### 🪟 Windows (Powershell)
 ```
 (Invoke-WebRequest -Uri "https://api.ipify.org").Content
+```
+
+## Afficher la table de routage
+
+### 🐧 Linux
+```
+ip route
+```
+```
+netstat -rn
+```
+### 🪟 Windows
+```
+route print
+```
+
+### 🪟 Windows (Powershell)
+```
+Get-NetRoute
 ```
