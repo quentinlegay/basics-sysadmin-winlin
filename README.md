@@ -165,3 +165,15 @@ route print
 ```
 Get-NetRoute
 ```
+
+## Afficher le débit temps réel d'une carte réseau
+
+### 🪟 Windows
+```
+wmic nic where "NetEnabled=true" get Name, Speed
+```
+
+### 🪟 Windows (Powershell)
+```
+Get-NetAdapter
+```
